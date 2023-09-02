@@ -30,7 +30,7 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    const selectedDate = selectedDates[0];
+    const [selectedDate] = selectedDates;
 
     if (selectedDate && selectedDate > new Date()) {
       startButton.removeAttribute('disabled');
