@@ -22,6 +22,7 @@ timerFields.forEach(field => {
 // STYLES
 
 let countdownInterval;
+let selectedDate;
 
 const options = {
   enableTime: true,
