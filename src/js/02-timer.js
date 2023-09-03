@@ -29,6 +29,8 @@ const options = {
   time_24hr: true,
   defaultDate: new Date(),
   minuteIncrement: 1,
+  static: true,
+
   onClose(selectedDates) {
     const [selectedDate] = selectedDates;
 
@@ -103,5 +105,5 @@ startButton.addEventListener('click', function () {
 });
 
 dateTimePicker.addEventListener('change', function () {
-  selectedDate = flatpickr.parseDate(dateTimePicker.value);
+  selectedDate = new Date(dateTimePicker.value);
 });
