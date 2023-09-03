@@ -18,7 +18,7 @@ function handlePromiseSuccess({ position, delay }) {
 }
 
 function handlePromiseError({ position, delay }) {
-  Notiflix.Notify.failure(`✅ Fulfilled promise ${position} in ${delay}ms`);
+  Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
 }
 
 function handleFormSubmit(event) {
